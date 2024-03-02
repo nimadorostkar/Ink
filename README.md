@@ -10,7 +10,7 @@
 1. Clone this repository
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/nimadorostkar/Ink.git
 ```
 
 2. Install dependencies
