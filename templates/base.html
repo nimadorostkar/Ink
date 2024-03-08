@@ -55,19 +55,19 @@
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="{% url 'homepage:home' %}#home-section" class="nav-link">Home</a></li>
+                <li><a href="{% url 'homepage:home' %}#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="{% url 'homepage:home' %}#about-section" class="nav-link">About</a></li>
               </ul>
             </div>
             <div class="site-logo pos-absolute">
-              <a href="#" class="unslate_co--site-logo">{{ data.name }}<span>.</span></a>
+              <a href="{% url 'homepage:home' %}" class="unslate_co--site-logo">{{ data.name }}<span>.</span></a>
             </div>
             <div class="col-md-5 text-right text-lg-left">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#journal-section" class="nav-link">Journal</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="{% url 'homepage:home' %}#services-section" class="nav-link">Services</a></li>
+                <li><a href="{% url 'homepage:home' %}#journal-section" class="nav-link">Journal</a></li>
+                <li><a href="{% url 'homepage:home' %}#contact-section" class="nav-link">Contact</a></li>
               </ul>
 
               <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
@@ -91,7 +91,7 @@
           <div class="row justify-content-center">
             <div class="col-md-7">
               
-              <div class="footer-site-logo"><a href="#">{{ data.name }}<span>.</span></a></div>
+              <div class="footer-site-logo"><a href="{% url 'homepage:home' %}">{{ data.name }}<span>.</span></a></div>
 
               <ul class="footer-site-social">
                 <li><a href="{{ data.facebook_link }}">Facebook</a></li>

@@ -1,6 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from django.utils.html import format_html
+from django.urls import reverse
 
 
 class Post(models.Model):
@@ -14,6 +15,9 @@ class Post(models.Model):
 
     def cover(self):
         return format_html("<img width=40 src='{}'>".format(self.img.url))
+
+    def get_absolute_url(self):
+        return reverse('homepage:blog-single', args=[self.id])
 
 
 

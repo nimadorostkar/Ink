@@ -2,7 +2,6 @@
 {% load static %}
 
 
-
 {% block content %}
 
 
@@ -42,18 +41,6 @@
 
             <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
               <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
-
-              <!-- <a href="#" class="text-white js-filter d-inline-block d-lg-none">Filter</a>
-
-              <div class="filter-wrap">
-                <div class="filter ml-auto" id="filters">
-                  <a href="#" class="active" data-filter="*">All</a>
-                  <a href="#" data-filter=".web">Web</a>
-                  <a href="#" data-filter=".branding">Branding</a>
-                  <a href="#" data-filter=".illustration">Illustration</a>
-                  <a href="#" data-filter=".packaging">Packaging</a>
-                </div>
-              </div> -->
             </div>
 
 
@@ -74,6 +61,8 @@
               </div>
             {% endfor %}
             </div>
+            <h6 class="heading-h6 text-center divider"><a href="{% url 'homepage:portfolio' %}" class="gsap-reveal"> See more designs ➦ </a></h6>
+            <br>
 
           </div>
 
@@ -187,13 +176,10 @@
             <span class="gsap-reveal"><img src="{% static 'images/divider.png' %}" alt="divider" width="76"></span>
           </div>
 
-
-
-
           <div class="row gutter-v4 align-items-stretch">
             {% for item in post %}
-              <div class="col-sm-6 col-md-6 col-lg-6 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-                <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
+              <div class="col-sm-6 col-md-6 col-lg-3 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
+                <a href="{{ item.get_absolute_url }}" class="grid-item blog-item w-100 h-100">
                   <div class="overlay">
                     <div class="portfolio-item-content">
                       <h3>{{ item.title }}</h3>
@@ -205,6 +191,9 @@
               </div>
             {% endfor %}
           </div>
+
+          <h6 class="heading-h6 text-center divider"><a href="{% url 'homepage:blog' %}" class="gsap-reveal"> See more posts ➦ </a></h6>
+          <br>
 
         </div>
       </div>
