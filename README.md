@@ -63,3 +63,6 @@ https://demo.templatemonster.com/demo/59091.html?aff=dazzlersoft
 https://preview.themeforest.net/item/tattoo-studio-responsive-html5-template/full_screen_preview/5405457?ref=dazzlersoft
 
 https://preview.themeforest.net/item/ink-arts-tattoo-salon-html-template/full_screen_preview/17516884?ref=dazzlersoft
+
+
+https://www.google.com/search?q=A+variety+of+different+tattoo+styles&rlz=1C5CHFA_enIR930IR930&oq=A+variety+of+different+tattoo+styles&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHMzM2ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8

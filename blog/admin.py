@@ -5,6 +5,6 @@ from blog.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title','post_date')
+    list_display = ('cover','title','post_date')
 admin.site.register(Post, PostAdmin)
 
