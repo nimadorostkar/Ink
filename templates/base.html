@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title> {% block title %}{% endblock %}  </title>
+    <title> {% block title %} {{ data.name }} {% endblock %}  </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -61,7 +61,7 @@
               </ul>
             </div>
             <div class="site-logo pos-absolute">
-              <a href="base.html" class="unslate_co--site-logo">Unfold<span>.</span></a>
+              <a href="#" class="unslate_co--site-logo">{{ data.name }}<span>.</span></a>
             </div>
             <div class="col-md-5 text-right text-lg-left">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
@@ -91,26 +91,21 @@
           <div class="row justify-content-center">
             <div class="col-md-7">
               
-              <div class="footer-site-logo"><a href="#">Unfold<span>.</span></a></div>
+              <div class="footer-site-logo"><a href="#">{{ data.name }}<span>.</span></a></div>
 
               <ul class="footer-site-social">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Dribbble</a></li>
-                <li><a href="#">Behance</a></li>
+                <li><a href="{{ data.facebook_link }}">Facebook</a></li>
+                <li><a href="{{ data.twitter_link }}">Twitter</a></li>
+                <li><a href="{{ data.instagram_link }}">Instagram</a></li>
+                <li><a href="{{ data.whatsapp_link }}">Whatsapp</a></li>
+                <li><a href="{{ data.telegram_link }}">Telegram</a></li>
               </ul>
 
               <p class="site-copyright">
-                
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
                 <script>
                   document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="icon-heart"
-                  aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              
+                </script> All rights reserved | Development by <a href="https://www.linkedin.com/in/nimadorostkar/" target="_blank">Nima</a>
               </p>
 
             </div>
