@@ -10,6 +10,11 @@ class Category(models.Model):
     def __str__(self):
         return self.title
 
+    def img(self):
+        return format_html("<img width=80 src='{}'>".format(self.image.url))
+
+
+
 
 
 class Design(models.Model):
@@ -23,6 +28,6 @@ class Design(models.Model):
         return self.title
 
     def img(self):
-        return format_html("<img width=40 src='{}'>".format(self.image.url))
+        return format_html("<img width=60 src='{}'>".format(self.image.url))
 
 

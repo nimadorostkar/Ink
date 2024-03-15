@@ -3,7 +3,7 @@ from design.models import Category, Design
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['title',]
+    list_display = ['title','img']
 admin.site.register(Category, CategoryAdmin)
 
 
